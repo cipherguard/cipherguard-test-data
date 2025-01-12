@@ -1,0 +1,41 @@
+{
+    "name": "cipherguard/cipherguard-test-data",
+    "description": "Cipherguard data test plugin.",
+    "type": "cakephp-plugin",
+    "version": "4.8.0",
+    "keywords": [
+        "password",
+        "cipherguard"
+    ],
+    "homepage": "https://www.cipherguard.com",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "KhulnaSoft Team",
+            "homepage": "https://www.cipherguard.com/credits"
+        }
+    ],
+    "support": {
+        "bugs": "https://github.com/cipherguard/cipherguard/issues",
+        "help": "https://www.cipherguard.com/help",
+        "source": "https://github.com/cipherguard/cipherguard"
+    },
+    "require": {
+        "ext-json" : "*",
+        "cakephp/cakephp": "^4.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5 || ^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "CipherguardTestData\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CipherguardTestData\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
